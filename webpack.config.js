@@ -1,6 +1,8 @@
 const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const webpackConfig = (env) => {
+const webpackConfig = (env = {}) => {
   const isProduction = !!env.production
 
   const config = {
@@ -8,7 +10,7 @@ const webpackConfig = (env) => {
     entry: './src/index.ts',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'bundle.js',
+      filename: '[name].[hash].js',
     },
     module: {
       rules: [
@@ -27,6 +29,20 @@ const webpackConfig = (env) => {
     resolve: {
       extensions: ['.js', '.jsx', '.ts', 'tsx'],
     },
+    plugins: [
+      new CleanWebpackPlugin(),
+      new HtmlWebpackPlugin({
+        title: 'Output Management',
+      }),
+    ],
+  }
+
+  if (!isProduction) {
+    config.devServer = {
+      contentBase: path.join(__dirname, 'dist'),
+      host: '0.0.0.0',
+      hot: true,
+    }
   }
 
   return config

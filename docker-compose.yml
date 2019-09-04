@@ -7,3 +7,5 @@ services:
       - NODE_ENV=development
     volumes:
       - ./:/app
+    ports:
+      - "8080:8080"
