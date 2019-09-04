@@ -1,0 +1,31 @@
+{
+  "name": "roster",
+  "version": "0.0.1",
+  "description": "IREC Melbourne rostering web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --env.production"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irecdigitalministry/roster.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irecdigitalministry/roster/issues"
+  },
+  "homepage": "https://github.com/irecdigitalministry/roster#readme"
+}
