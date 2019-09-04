@@ -7,7 +7,7 @@ const webpackConfig = (env = {}) => {
 
   const config = {
     mode: isProduction ? 'production' : 'development',
-    entry: './src/index.ts',
+    entry: './src/index.tsx',
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].[hash].js',
@@ -38,7 +38,7 @@ const webpackConfig = (env = {}) => {
   }
 
   if (!isProduction) {
-    config.devtool = 'source-map'
+    config.devtool = 'inline-source-map'
     config.devServer = {
       contentBase: path.join(__dirname, 'dist'),
       host: '0.0.0.0',
