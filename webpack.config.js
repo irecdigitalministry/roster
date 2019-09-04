@@ -38,6 +38,7 @@ const webpackConfig = (env = {}) => {
   }
 
   if (!isProduction) {
+    config.devtool = 'source-map'
     config.devServer = {
       contentBase: path.join(__dirname, 'dist'),
       host: '0.0.0.0',
