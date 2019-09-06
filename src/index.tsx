@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import CalendarDemo from './CalendarDemo';
+
 const getMountPoint = (id: string = 'root'): HTMLElement => {
   let rootEl = document.getElementById(id);
   if (!rootEl) {
@@ -12,6 +14,6 @@ const getMountPoint = (id: string = 'root'): HTMLElement => {
 };
 
 ReactDOM.render(
-  (<div>Hello world</div>),
+  <CalendarDemo />,
   getMountPoint('root'),
 );

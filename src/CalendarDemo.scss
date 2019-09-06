@@ -1,0 +1,35 @@
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/timeline/main.css';
+@import '~@fullcalendar/resource-timeline/main.css';
+@import '~@fullcalendar/list/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import '~@fullcalendar/timegrid/main.css';
+
+html, body {
+  /* TODO Use normalize.css to do this properly */
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.calendar-container {
+  /*
+  This container is needed so that the calendar could span the entire window.
+  Note that the calendar's height seems to be calculated by Javascript rather
+  than sized by CSS.
+  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fc-header-toolbar {
+  /*
+  The calendar will be butting up against the edges,
+  but let's scoot in the header's buttons
+  */
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
