@@ -2,4 +2,8 @@
 
 How do I run?
 
-> Just open index.html in your favourite browser.
+Run the following docker command
+```
+docker-compose up
+```
+Go to browser and open `localhost:8080`
