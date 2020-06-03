@@ -1,6 +1,7 @@
-Requirements:
+# Requirements:
 
 1. node.js 
+
 Mac users: https://treehouse.github.io/installation-guides/mac/node-mac.html
 Win users: https://treehouse.github.io/installation-guides/windows/node-windows.html
 Nix users: https://www.ostechnix.com/install-node-js-linux/
