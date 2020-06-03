@@ -9,6 +9,7 @@ Win users: https://treehouse.github.io/installation-guides/windows/node-windows.
 Nix users: https://www.ostechnix.com/install-node-js-linux/
 
 2. npx
+
 npm install -g npx
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
