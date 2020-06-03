@@ -1,3 +1,7 @@
+You need to install 2 things as requirements:
+1. node.js 
+2. npx
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
