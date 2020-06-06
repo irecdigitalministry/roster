@@ -1,3 +1,13 @@
+## Docker Script
+
+Build
+
+### `docker build -t roster:dev .`
+
+Run
+
+### `docker run -it -p 3000:3000 roster:dev`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
